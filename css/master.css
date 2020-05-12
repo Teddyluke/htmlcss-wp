@@ -3,6 +3,7 @@
   margin:0;
   padding:0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -12,6 +13,17 @@ body {
   width: 80%;
   margin: 0 auto;
 }
+
+.titoletti {
+  font-size: 30px;
+  color: grey;
+  text-align: center;
+}
+
+.textrule {
+  padding: 10px 0px 10px 7px;
+}
+
 
 /*  header */
 header {
@@ -52,6 +64,7 @@ header {
 .menu a {
   text-decoration: none;
   color: white;
+  font-weight:  500;
  }
 
 .menu li {
@@ -70,12 +83,6 @@ header {
   content: "";
   display: table;
   clear: both;
-}
-/* generali */
-.titoletti {
-  font-size: 30px;
-  color: grey;
-  text-align: center;
 }
 
 /* colonna sinistra */
@@ -99,10 +106,6 @@ header {
 }
 /* regole paragrafetti colonna sx */
 
-.left-hyperlink {
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
 
 .left-hyperlink a {
   text-decoration: none;
@@ -116,38 +119,71 @@ header {
   width: 50%;
   float: left;
   margin: 0 5%;
-  /* debug */
-  height: 400px;
-  background-color: purple;
+  background-color: white;
+  border-radius: 5px;
 }
+
+.corpo-centrale .titoletti {
+  text-align: left;
+  text-shadow: 2px 2px 2px black;
+}
+
+/* regole colonna destra */
 
 .widget-destro {
   float: right;
   width: 20%;
-  /* debug */
-  height: 400px;
 }
 
-.top-article {
-  width: 100%;
-  /* debug */
-  height:48%;
-  background-color: pink;
+.articoli {
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
 
-.bottom-article {
-  width: 100%;
-  margin-top: 4%;
-  /* debug */
-  height:48%;
-  background-color: pink;
-}
 
+/* regole footer */
 
 footer {
   width: 100%;
-  /*debug*/
   height: 100px;
-  background-color: lightblue;
-  margin-top: 10px;
+  background-color: white;
+  border-radius: 5px;
+  position: relative;
+}
+
+.credits {
+  color: lightgrey;
+  text-align: center;
+  border-bottom: 1px solid lightgrey;
+  padding-top: 5px;
+  margin: 0px 6px;
+}
+/* regole icone footer */
+.fa-facebook-square {
+  display: inline-block;
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  font-size: 2em;
+  color: lightgrey;
+}
+
+.fa-instagram {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 0);
+  font-size: 2em;
+  color: lightgrey;
+}
+
+.fa-github {
+  display: inline-block;
+  position: absolute;
+  right: 20%;
+  top: 50%;
+  font-size: 2em;
+  color: lightgrey;
 }
